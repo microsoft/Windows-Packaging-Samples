@@ -1,3 +1,10 @@
+# Windows Application Packaging Project Samples
+
+This repo contains samples to show how to use Visual Studio 2017 15.5 to create Windows applications that can take the best of Win32 and UWP worlds in a single package.
+
+# Requirements
+
+You will need to get the latest Visual Studio 2017 version (15.5) from here.
 
 # Contributing
 
