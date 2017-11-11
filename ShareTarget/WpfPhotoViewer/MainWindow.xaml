@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfPhotoViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPhotoViewer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="525" Width="725" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="WPF Image Viewer" FontSize="30" FontWeight="ExtraBold" HorizontalAlignment="Center" />
+            <TextBlock x:Name="PathInfo" />
+            <StackPanel Orientation="Horizontal">
+                <ListView x:Name="ImagesList" Width="200" PreviewMouseLeftButtonUp="ImagesList_PreviewMouseLeftButtonUp"   />
+                <Image x:Name="ImageView" Width="400" Height="400"/>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Window>

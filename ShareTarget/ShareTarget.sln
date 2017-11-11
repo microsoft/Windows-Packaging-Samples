@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27109.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPhotoViewer", "WpfPhotoViewer\WpfPhotoViewer.csproj", "{ED558B63-5610-4FFC-8074-D3A71E720312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePhotoUI", "SharePhotoUI\SharePhotoUI.csproj", "{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}"
+EndProject
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "WpfPhotoViewer.Package", "WpfPhotoViewer.Package\WpfPhotoViewer.Package.wapproj", "{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Debug|x64.Build.0 = Debug|Any CPU
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x64.ActiveCfg = Release|Any CPU
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x64.Build.0 = Release|Any CPU
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x86.Build.0 = Release|Any CPU
+		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Debug|x64.ActiveCfg = Debug|x64
+		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Debug|x64.Build.0 = Debug|x64
+		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Debug|x86.ActiveCfg = Debug|x86
+		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Debug|x86.Build.0 = Debug|x86
+		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Release|x64.ActiveCfg = Release|x64
+		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Release|x64.Build.0 = Release|x64
+		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Release|x64.Deploy.0 = Release|x64
+		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Release|x86.ActiveCfg = Release|x86
+		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Release|x86.Build.0 = Release|x86
+		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Release|x86.Deploy.0 = Release|x86
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Debug|x64.ActiveCfg = Debug|x64
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Debug|x64.Build.0 = Debug|x64
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Debug|x64.Deploy.0 = Debug|x64
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Debug|x86.ActiveCfg = Debug|x86
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Debug|x86.Build.0 = Debug|x86
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Debug|x86.Deploy.0 = Debug|x86
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Release|x64.ActiveCfg = Release|x64
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Release|x64.Build.0 = Release|x64
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Release|x64.Deploy.0 = Release|x64
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Release|x86.ActiveCfg = Release|x86
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Release|x86.Build.0 = Release|x86
+		{B5CD09E0-B869-4130-92F0-E97E1DEE9A2F}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE4633C9-1E00-4F2D-8425-9D429B475C63}
+	EndGlobalSection
+EndGlobal
