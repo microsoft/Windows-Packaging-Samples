@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27109.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGrid2Excel", "DataGrid2Excel\DataGrid2Excel.csproj", "{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel.Interop", "Excel.Interop\Excel.Interop.csproj", "{FB71514A-B1DF-4C91-982E-BA692C093C2F}"
+EndProject
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "OfficeInterop.Package", "OfficeInterop.Package\OfficeInterop.Package.wapproj", "{1D25913A-A680-468E-A305-8D753E941839}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}.Debug|x64.ActiveCfg = Debug|x64
+		{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}.Debug|x64.Build.0 = Debug|x64
+		{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}.Debug|x86.ActiveCfg = Debug|x86
+		{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}.Debug|x86.Build.0 = Debug|x86
+		{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}.Release|x64.ActiveCfg = Release|x64
+		{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}.Release|x64.Build.0 = Release|x64
+		{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}.Release|x64.Deploy.0 = Release|x64
+		{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}.Release|x86.ActiveCfg = Release|x86
+		{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}.Release|x86.Build.0 = Release|x86
+		{7CBAD31A-3794-4C17-8CCC-B66D9F289D6B}.Release|x86.Deploy.0 = Release|x86
+		{FB71514A-B1DF-4C91-982E-BA692C093C2F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FB71514A-B1DF-4C91-982E-BA692C093C2F}.Debug|x64.Build.0 = Debug|Any CPU
+		{FB71514A-B1DF-4C91-982E-BA692C093C2F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FB71514A-B1DF-4C91-982E-BA692C093C2F}.Debug|x86.Build.0 = Debug|Any CPU
+		{FB71514A-B1DF-4C91-982E-BA692C093C2F}.Release|x64.ActiveCfg = Release|Any CPU
+		{FB71514A-B1DF-4C91-982E-BA692C093C2F}.Release|x64.Build.0 = Release|Any CPU
+		{FB71514A-B1DF-4C91-982E-BA692C093C2F}.Release|x86.ActiveCfg = Release|Any CPU
+		{FB71514A-B1DF-4C91-982E-BA692C093C2F}.Release|x86.Build.0 = Release|Any CPU
+		{1D25913A-A680-468E-A305-8D753E941839}.Debug|x64.ActiveCfg = Debug|x64
+		{1D25913A-A680-468E-A305-8D753E941839}.Debug|x64.Build.0 = Debug|x64
+		{1D25913A-A680-468E-A305-8D753E941839}.Debug|x64.Deploy.0 = Debug|x64
+		{1D25913A-A680-468E-A305-8D753E941839}.Debug|x86.ActiveCfg = Debug|x86
+		{1D25913A-A680-468E-A305-8D753E941839}.Debug|x86.Build.0 = Debug|x86
+		{1D25913A-A680-468E-A305-8D753E941839}.Debug|x86.Deploy.0 = Debug|x86
+		{1D25913A-A680-468E-A305-8D753E941839}.Release|x64.ActiveCfg = Release|x64
+		{1D25913A-A680-468E-A305-8D753E941839}.Release|x64.Build.0 = Release|x64
+		{1D25913A-A680-468E-A305-8D753E941839}.Release|x64.Deploy.0 = Release|x64
+		{1D25913A-A680-468E-A305-8D753E941839}.Release|x86.ActiveCfg = Release|x86
+		{1D25913A-A680-468E-A305-8D753E941839}.Release|x86.Build.0 = Release|x86
+		{1D25913A-A680-468E-A305-8D753E941839}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE4633C9-1E00-4F2D-8425-9D429B475C63}
+	EndGlobalSection
+EndGlobal
