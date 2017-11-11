@@ -117,6 +117,7 @@
     <None Include="WPFUIWithBackgroundTask.Package_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UWPHead\UWPHead.csproj" />
     <ProjectReference Include="..\WpfUIWithBackgroundTask\WpfUIWithBackgroundTask.csproj" />
   </ItemGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
