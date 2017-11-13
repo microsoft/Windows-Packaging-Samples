@@ -45,6 +45,11 @@ namespace WpfUIWithBackgroundTask
             {
                 InfoBGTask.Text += item;
             }
+            var url = ApplicationData.Current.LocalSettings.Values["UrlToVerify"].ToString();
+            if (!string.IsNullOrEmpty(url))
+            {
+                UrlToTest.Text = url;
+            }
         }
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
