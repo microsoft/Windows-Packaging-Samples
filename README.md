@@ -4,7 +4,7 @@ This repo contains samples to show how to use Visual Studio 2017 15.5 to create 
 
 # Requirements
 
-You will need to get the latest Visual Studio 2017 version (15.5) from [here](https://www.visualstudio.com).
+You will need to get the latest Visual Studio 2017 version from [here](https://www.visualstudio.com) and the 1803/17134 Windows SDK (it can be installed with the latest Visual Studio tools for UWP).
 
 # Contributing
 
