@@ -56,6 +56,10 @@ namespace ExcelInterop
 
         private async static void Connection_RequestReceived(AppServiceConnection sender, AppServiceRequestReceivedEventArgs args)
         {
+            // Get a deferral because we use an awaitable API below to respond to the message
+            // and we don't want this call to get cancelled while we are waiting.
+            var messageDeferral = args.GetDeferral();
+
             string value = args.Request.Message["REQUEST"] as string;
             string result = "";
             switch (value)
@@ -95,7 +99,17 @@ namespace ExcelInterop
 
             ValueSet response = new ValueSet();
             response.Add("RESPONSE", result);
-            await args.Request.SendResponseAsync(response);
+
+            try
+            {
+                await args.Request.SendResponseAsync(response);
+            }
+            finally
+            {
+                // Complete the deferral so that the platform knows that we're done responding to the app service call.
+                // Note for error handling: this must be called even if SendResponseAsync() throws an exception.
+                messageDeferral.Complete();
+            }
         }
     }
 }
