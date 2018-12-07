@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/hnow393hhm76l3us?svg=true)](https://ci.appveyor.com/project/rido-min/windows-packaging-samples)
+
 # Windows Application Packaging Project Samples
 
 This repo contains samples to show how to use Visual Studio 2017 15.5 to create Windows applications that can take the best of Win32 and UWP worlds in a single package.
