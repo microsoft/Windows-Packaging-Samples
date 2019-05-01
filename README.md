@@ -2,7 +2,7 @@
 
 # Windows Application Packaging Project Samples
 
-This repo contains samples to show how to use Visual Studio 2017 15.5 to create Windows applications that can take the best of Win32 and UWP worlds in a single package.
+This repo contains samples to show how to use Visual Studio (2017 15.5 or above, including 2019) to create Windows applications that can take the best of Win32 and UWP worlds in a single package.
 
 These samples are described in the Windows Developer Blog post: [Extend your desktop application with Windows 10 features using the new Visual Studio Application Packaging Project](https://blogs.windows.com/buildingapps/2017/12/04/extend-desktop-application-windows-10-features-using-new-visual-studio-application-packaging-project)
 
