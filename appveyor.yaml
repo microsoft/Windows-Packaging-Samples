@@ -1,8 +1,0 @@
-version: 1.0.{build}
-image: Visual Studio 2019 Preview
-configuration: Release
-platform: x86
-build_script:
-- cmd: msbuild /t:Restore;Rebuild /p:AppxBundlePlatforms="X86|x64"  /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload /p:AppxPackageSigningEnabled=false OfficeInterop\OfficeInterop.sln
-- cmd: msbuild /t:Restore;Rebuild /p:AppxBundlePlatforms="X86|x64"  /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload /p:AppxPackageSigningEnabled=false ShareTarget\ShareTarget.sln
-- cmd: msbuild /t:Restore;Rebuild /p:AppxBundlePlatforms="X86|x64"  /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload /p:AppxPackageSigningEnabled=false BGTask\BGTask.sln
