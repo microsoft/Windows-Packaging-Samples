@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27109.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28909.66
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPhotoViewer", "WpfPhotoViewer\WpfPhotoViewer.csproj", "{ED558B63-5610-4FFC-8074-D3A71E720312}"
 EndProject
@@ -21,10 +21,10 @@ Global
 		{ED558B63-5610-4FFC-8074-D3A71E720312}.Debug|x64.Build.0 = Debug|Any CPU
 		{ED558B63-5610-4FFC-8074-D3A71E720312}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{ED558B63-5610-4FFC-8074-D3A71E720312}.Debug|x86.Build.0 = Debug|Any CPU
-		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x64.ActiveCfg = Release|Any CPU
-		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x64.Build.0 = Release|Any CPU
-		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x86.ActiveCfg = Release|Any CPU
-		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x86.Build.0 = Release|Any CPU
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x64.ActiveCfg = Release|x64
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x64.Build.0 = Release|x64
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x86.ActiveCfg = Release|x86
+		{ED558B63-5610-4FFC-8074-D3A71E720312}.Release|x86.Build.0 = Release|x86
 		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Debug|x64.ActiveCfg = Debug|x64
 		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Debug|x64.Build.0 = Debug|x64
 		{C5FDCFBE-CE4F-4B82-8D82-34BCBE039951}.Debug|x86.ActiveCfg = Debug|x86
