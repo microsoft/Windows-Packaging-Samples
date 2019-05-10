@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/hnow393hhm76l3us?svg=true)](https://ci.appveyor.com/project/rido-min/windows-packaging-samples)
+[![Build Status](https://dev.azure.com/devops-for-client-apps/Windows-Packaging-Samples/_apis/build/status/microsoft.Windows-Packaging-Samples?branchName=master)](https://dev.azure.com/devops-for-client-apps/Windows-Packaging-Samples/_build/latest?definitionId=4&branchName=master)
 
 # Windows Application Packaging Project Samples
 
