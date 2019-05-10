@@ -15,30 +15,24 @@ variables:
   appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
 
 steps:
-- task: NuGetToolInstaller@0
-
-- task: NuGetCommand@2
+- task: VSBuild@1
   inputs:
-    restoreSolution: '$(solution)'
+    platform: 'x86'
+    solution: '.\BGTask\BGTask.sln)'
+    configuration: '$(buildConfiguration)'
+    msbuildArgs: '/restore /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
 
 - task: VSBuild@1
   inputs:
     platform: 'x86'
-    solution: 'BGTask\BGTask.sln)'
+    solution: '.\OfficeInterop\OfficeInterop.sln'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
+    msbuildArgs: '/restore /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
 
 - task: VSBuild@1
   inputs:
     platform: 'x86'
-    solution: 'OfficeInterop\OfficeInterop.sln'
+    solution: '.\ShareTarget\ShareTarget.sln'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
-
-- task: VSBuild@1
-  inputs:
-    platform: 'x86'
-    solution: 'ShareTarget\ShareTarget.sln'
-    configuration: '$(buildConfiguration)'
-    msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
+    msbuildArgs: '/restore /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
 
