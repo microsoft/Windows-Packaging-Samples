@@ -20,19 +20,19 @@ steps:
     platform: 'x86'
     solution: '.\BGTask\BGTask.sln'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/restore /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
+    msbuildArgs: '/restore /p:Platform=x86 /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
 
 - task: VSBuild@1
   inputs:
     platform: 'x86'
     solution: '.\OfficeInterop\OfficeInterop.sln'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/restore /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
+    msbuildArgs: '/restore /p:Platform=x86 /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
 
 - task: VSBuild@1
   inputs:
     platform: 'x86'
     solution: '.\ShareTarget\ShareTarget.sln'
     configuration: '$(buildConfiguration)'
-    msbuildArgs: '/restore /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
+    msbuildArgs: '/restore /p:Platform=x86 /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
 
