@@ -8,7 +8,7 @@ These samples are described in the Windows Developer Blog post: [Extend your des
 
 # Requirements
 
-You will need to get the latest Visual Studio 2017 version from [here](https://www.visualstudio.com) and the 1803/17134 Windows SDK (it can be installed with the latest Visual Studio tools for UWP).
+You will need to get the latest Visual Studio version from [here](https://www.visualstudio.com) and the 1803/17134 Windows SDK (it can be installed with the latest Visual Studio tools for UWP).
 
 # Contributing
 
