@@ -75,7 +75,7 @@
     <ProjectReference Include="..\WinFormsReferencingWinRT\WinFormsReferencingWinRT.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="Microsoft.VCLibs.Desktop, Version=14.0">
+    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
       <Name>Visual C++ 2015 Runtime for Desktop Bridge Apps</Name>
     </SDKReference>
   </ItemGroup>
