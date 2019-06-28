@@ -6,6 +6,7 @@ This repo contains samples to show how to use Visual Studio (2017 15.5 or above,
 
 These samples are described in the Windows Developer Blog post: [Extend your desktop application with Windows 10 features using the new Visual Studio Application Packaging Project](https://blogs.windows.com/buildingapps/2017/12/04/extend-desktop-application-windows-10-features-using-new-visual-studio-application-packaging-project)
 
+
 # Requirements
 
 You will need to get the latest Visual Studio version from [here](https://www.visualstudio.com) and the 1803/17134 Windows SDK (it can be installed with the latest Visual Studio tools for UWP).
