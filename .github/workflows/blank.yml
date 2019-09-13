@@ -5,13 +5,38 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    runs-on: windows-latest
+
+variables:
+  buildPlatform: 'x86'
+  buildConfiguration: 'Release'
+  appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
+
+steps:
+- task: VSBuild@1
+  inputs:
+    platform: 'x86'
+    solution: '.\BGTask\BGTask.sln'
+    configuration: '$(buildConfiguration)'
+    msbuildArgs: '/restore /p:Platform=x86 /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
+
+- task: VSBuild@1
+  inputs:
+    platform: 'x86'
+    solution: '.\OfficeInterop\OfficeInterop.sln'
+    configuration: '$(buildConfiguration)'
+    msbuildArgs: '/restore /p:Platform=x86 /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
+
+- task: VSBuild@1
+  inputs:
+    platform: 'x86'
+    solution: '.\ShareTarget\ShareTarget.sln'
+    configuration: '$(buildConfiguration)'
+    msbuildArgs: '/restore /p:Platform=x86 /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
+
+- task: VSBuild@1
+  inputs:
+    platform: 'x86'
+    solution: '.\WinRT\WinRT.sln'
+    configuration: '$(buildConfiguration)'
+    msbuildArgs: '/restore /p:Platform=x86 /p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:AppxPackageSigningEnabled=false /p:UapAppxPackageBuildMode=StoreUpload'
